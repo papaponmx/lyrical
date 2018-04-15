@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import gql from 'graphql-tag';
+import { graphql } from 'react-apollo';
 
-export default class SongsList extends Component {
+class SongsList extends Component {
   render() {
+    console.log(this.props);
     return (
       <div>
         SongsList
@@ -18,3 +20,5 @@ const query = gql`
     }
   }
 `;
+
+export default graphql(query)(SongsList);
