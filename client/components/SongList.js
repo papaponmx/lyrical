@@ -24,8 +24,9 @@ render() {
         </ul>
         <Link
           to="/songs/new"
+          className="btn-floating btn-large red right"
         >
-
+          <i  className="material-icons">add</i>
         </Link>
       </div>
     )
