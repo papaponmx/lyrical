@@ -1,6 +1,6 @@
 import gql from 'graphql-tag';
 
-expot defaut gql`
+export default gql`
 query SongQuery($id: ID!) {
   song(id: $id) {
     id
